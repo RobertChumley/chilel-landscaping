@@ -12,8 +12,12 @@
         margin-left: auto;
         display: none;
         flex-direction: row;
+        position: relative;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
         @include tabletAndUp {
-          display:inline-block;
+          display:flex;
         }
     }
 }

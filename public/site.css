@@ -397,10 +397,14 @@
   margin-left: auto;
   display: none;
   flex-direction: row;
+  position: relative;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
 }
 @media (min-width: 720px) {
   .navbar--toggle {
-    display: inline-block;
+    display: flex;
   }
 }
 
