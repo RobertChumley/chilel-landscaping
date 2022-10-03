@@ -1,0 +1,9 @@
+@mixin media($query){
+    @if $query == tabletAndUp {
+      @media (min-width: 720px)  {@content;}
+  
+    }
+  }
+  @mixin tabletAndUp{
+     @media (min-width: 720px)  {@content;}
+  }
