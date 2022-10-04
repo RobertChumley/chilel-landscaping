@@ -11,9 +11,9 @@ import MenuToggle from '../components/MenuToggle.svelte';
 			height="50"
 		>
 	</a>
-	<a class="link" href="/projects/"> Residential</a>
-	<a class="link" href="/about/"> Commercial</a>
-	<a class="link" href="/about/"> Contact Us</a>
+	<a class="link" href="/residential/"> Residential</a>
+	<a class="link" href="/commercial/"> Commercial</a>
+	<a class="link" href="/contact/"> Contact Us</a>
 	<a class="link" href="/about/"> About</a>
 	<div class="socials">
 		<a class="social" href="https://twitter.com/me">
@@ -50,11 +50,8 @@ import MenuToggle from '../components/MenuToggle.svelte';
 </nav>
 <nav class="mobile-nav--toggle">
 	<div class="mobile-nav--menu">
-		<div>
-			<MenuToggle client:load>
-				<span class="material-symbols-outlined">menu</span>
-			</MenuToggle>
-		</div>
-		
+		<MenuToggle client:load>
+			<span class="material-symbols-outlined">menu</span>
+		</MenuToggle>
 	</div>
 </nav>

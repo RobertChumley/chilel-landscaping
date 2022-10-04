@@ -609,6 +609,10 @@ footer {
 .mobile-nav--menu-item {
   list-style: none;
 }
+.mobile-nav--menu {
+  align-content: center;
+  align-items: center;
+}
 
 .mobile-link {
   color: var(--t-subdue);
