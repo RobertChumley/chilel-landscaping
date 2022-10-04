@@ -8,16 +8,10 @@
         width: 100%;
         background-size: cover;
         background-position: center center;
-        @include tabletAndUp {
-            width: 55%;
-          }
     }
     &--text {
         width:100%;
         padding:2%;
-        @include tabletAndUp {
-            width: 45%;
-          }
     }
     &--title{
         font-size: larger;

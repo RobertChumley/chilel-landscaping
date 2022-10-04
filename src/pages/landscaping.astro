@@ -5,6 +5,8 @@ import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import ServiceHero from '../components/ServiceHero.astro';
+import LeftHero from '../components/LeftHero.astro';
+import RightHero from '../components/RightHero.astro';
 ---
 
 <html lang="en">
@@ -19,6 +21,17 @@ import ServiceHero from '../components/ServiceHero.astro';
 		<ServiceHero 
 			heroImage = '/assets/Driveway.jpg'
 			overlayTitle = 'Landscaping services'
+		/>
+		<br />
+		<LeftHero 
+			heroImage='background-image: url(/assets/LandscapingCourtyard.jpg);'
+			heroTitle='Integrate with existing architecture'
+			heroSummary="From natural stone and boulders to modern pavers and retaining walls, we'll help you choose a custom hardscape that fits seamlessly into your outdoor space. Best of all, our certified installers will make sure your patio, seating wall, and garden paths are built with Chilel Landscaping durable craftsmanship."
+		/>
+		<RightHero 
+			heroImage='background-image: url(/assets/LandscapingPath.jpg);'
+			heroTitle='Lay a path to your success'
+			heroSummary=''
 		/>
 		<Footer />
 	</body>
