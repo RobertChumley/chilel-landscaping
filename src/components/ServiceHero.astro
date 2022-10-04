@@ -8,25 +8,22 @@ const {
 ---
 
 
-<header class="hero">
+<header class="service-hero">
     <img
         width="1600"
         height="1131"
-        class="img"
-        src="/assets/HouseDriveway.jpg"
+        class="service-hero--image"
+        src={heroImage}
         sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
     />
     <div class="gradient"></div>
     <div class="gradient2"></div>
-    <div class="overlay">
-        <div class="overlay--hero">
-            <h2 class="title">
-                Let us build your dream yard
+    <div class="service-overlay">
+        <div class="service-overlay--hero">
+            <h2 class="service-title">
+                {overlayTitle}
             </h2>
-            <div class="roles">
-            </div>
-            <p class="desc">Trust our experts</p>
+            <p class="service-desc">Trust our experts</p>
         </div>
-        <div class="overlay--phone"><a href="tel:2402668555" class="overlay--button">Call Us!</a></div>
-    </div>
+   </div>
 </header>
