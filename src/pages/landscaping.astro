@@ -4,22 +4,22 @@ import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
-
+import ServiceHero from '../components/ServiceHero.astro';
 ---
 
 <html lang="en">
 	<head>
 		<MainHead
-			title="All Projects | Jeanine White"
+			title="Residential Services"
 			description="Learn about Jeanine White's most recent projects"
 		/>
 	</head>
 	<body>
 		<Nav />
-		<div class="wrapper">
-			<h1 class="title">All Projects</h1>
-			<div class="grid"></div>
-		</div>
+		<ServiceHero 
+			heroImage = '/assets/Driveway.jpg'
+			overlayTitle = 'Landscaping services'
+		/>
 		<Footer />
 	</body>
 </html>

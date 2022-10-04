@@ -1,0 +1,26 @@
+---
+import Styles from '../../public/site.css';
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import ServiceHero from '../components/ServiceHero.astro';
+
+---
+
+<html lang="en">
+	<head>
+		<MainHead
+			title="Residential Services"
+			description="Learn about Jeanine White's most recent projects"
+		/>
+	</head>
+	<body>
+		<Nav />
+		<ServiceHero 
+			heroImage = '/assets/SunsetSuburb.jpg'
+			overlayTitle = 'We do it all!'
+		/>
+		<Footer />
+	</body>
+</html>

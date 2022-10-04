@@ -736,4 +736,72 @@ footer {
   }
 }
 
+.service-hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.service-hero--image {
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+@media (min-width: 720px) {
+  .service-hero--image {
+    width: 55%;
+  }
+}
+.service-hero--text {
+  width: 100%;
+  padding: 2%;
+}
+@media (min-width: 720px) {
+  .service-hero--text {
+    width: 45%;
+  }
+}
+.service-hero--title {
+  font-size: larger;
+}
+.service-hero--desc {
+  font-size: medium;
+}
+@media (min-width: 720px) {
+  .service-hero {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.service-overlay--hero {
+  justify-content: center;
+  align-self: center;
+}
+
+@media (min-width: 750px) {
+  .overlay {
+    padding-left: 4rem;
+  }
+}
+.service-title {
+  font-weight: 900;
+  font-size: var(--f-u6);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
 /*# sourceMappingURL=site.css.map */

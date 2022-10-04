@@ -6,12 +6,6 @@ import Nav from '../components/Nav.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import ServiceHero from '../components/ServiceHero.astro';
 
-const projects = (await Astro.glob('./project/**/*.md'))
-	.filter(({ frontmatter }) => !!frontmatter.publishDate)
-	.sort(
-		(a, b) =>
-			new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
-	);
 ---
 
 <html lang="en">
@@ -23,7 +17,11 @@ const projects = (await Astro.glob('./project/**/*.md'))
 	</head>
 	<body>
 		<Nav />
-		<ServiceHero />
+		<ServiceHero 
+			heroImage = '/assets/SunsetSuburb.jpg'
+			overlayTitle = 'Hardscaping services'
+		/>
 		<Footer />
 	</body>
 </html>
+
