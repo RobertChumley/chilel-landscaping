@@ -1,19 +1,20 @@
 ---
 import Style from '../../public/site.css';
 const{
-    heroImage='/assets/HouseDriveway.jpg',
-    heroSummary=''
+    heroImage='',
+    heroSummary='',
+    heroTitle=''
 }= Astro.props;
 ---
 
 <div class="hero-right">
     <div class="hero-right--text">
         <h2 class="hero-right--title">
-            Trust The Experts
+            {heroTitle}
         </h2>
         <p class="hero-right--desc">
-            If you are looking for top-quality landscaping services, then your search ends with Chilel Landscaping. We are a team of certified landscapers with over 60 years of expertise in all areas of landscape construction, landscape design and maintenance.
+            {heroSummary}    
         </p>
     </div>
-    <div class="hero-right--image" style="background-image: url(/assets/LayInLawn.jpg);"></div>
+    <div class="hero-right--image" style={heroImage}></div>
 </div>

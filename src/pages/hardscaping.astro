@@ -5,6 +5,8 @@ import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import ServiceHero from '../components/ServiceHero.astro';
+import LeftHero from '../components/LeftHero.astro';
+import RightHero from '../components/RightHero.astro';
 
 ---
 
@@ -20,6 +22,12 @@ import ServiceHero from '../components/ServiceHero.astro';
 		<ServiceHero 
 			heroImage = '/assets/SunsetSuburb.jpg'
 			overlayTitle = 'Hardscaping services'
+		/>
+		<LeftHero 
+			heroImage='background-image: url(/assets/HardscapeShed.jpg);'
+		/>
+		<RightHero 
+			heroImage='background-image: url(/assets/HardscapePath.jpg);'
 		/>
 		<Footer />
 	</body>
