@@ -23,6 +23,11 @@
     &--menu{
         align-content: center;
         align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    &--call-button{
+        justify-self: flex-end;
     }
 }
 

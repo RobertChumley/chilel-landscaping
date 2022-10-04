@@ -19,11 +19,9 @@
 		>
 	</a></li>
 
-	<li class="mobile-nav--menu-item"><a class="link" href="/projects/"> Residential</a></li>
-	
-	<li class="mobile-nav--menu-item"><a class="link" href="/about/"> Commercial</a></li>
-	<li class="mobile-nav--menu-item"><a class="link" href="/about/"> Contact Us</a></li>
-	
+	<li class="mobile-nav--menu-item"><a class="link" href="/residential/"> Residential</a></li>
+	<li class="mobile-nav--menu-item"><a class="link" href="/commercial/"> Commercial</a></li>
+	<li class="mobile-nav--menu-item"><a class="link" href="/contact/"> Contact Us</a></li>
 	<li class="mobile-nav--menu-item"><a class="link" href="/about/"> About</a></li>
 	<li class="mobile-nav--menu-item">
 		<div class="socials">

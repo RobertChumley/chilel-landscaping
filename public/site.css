@@ -17,18 +17,17 @@
   position: relative;
   overflow: hidden;
 }
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 @media (min-width: 750px) {
   .hero {
     height: 45vw;
   }
 }
-.img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .gradient,
 .gradient2 {
   background-image: url("/assets/mesh-gradient.jpg");
@@ -203,18 +202,17 @@
   position: relative;
   overflow: hidden;
 }
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 @media (min-width: 750px) {
   .hero {
     height: 45vw;
   }
 }
-.img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .gradient,
 .gradient2 {
   background-image: url("/assets/mesh-gradient.jpg");
@@ -612,6 +610,11 @@ footer {
 .mobile-nav--menu {
   align-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.mobile-nav--call-button {
+  justify-self: flex-end;
 }
 
 .mobile-link {
@@ -649,6 +652,32 @@ footer {
 
 .socialIcon:hover {
   fill: var(--t-active);
+}
+
+.hero-left {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.hero-left--image {
+  width: 55%;
+  height: auto;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+}
+.hero-left--text {
+  width: 45%;
+  float: right;
+  padding: 2%;
+}
+.hero-left--title {
+  font-size: larger;
+}
+.hero-left--desc {
+  font-size: medium;
 }
 
 /*# sourceMappingURL=site.css.map */
