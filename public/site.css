@@ -680,4 +680,28 @@ footer {
   font-size: medium;
 }
 
+.hero-right {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.hero-right--image {
+  width: 55%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+}
+.hero-right--text {
+  width: 45%;
+  padding: 2%;
+}
+.hero-right--title {
+  font-size: larger;
+}
+.hero-right--desc {
+  font-size: medium;
+}
+
 /*# sourceMappingURL=site.css.map */

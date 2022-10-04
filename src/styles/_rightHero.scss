@@ -1,0 +1,24 @@
+.hero-right {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    &--image {
+        width: 55%;
+        height: auto;
+        background-size: cover;
+        background-position: center center;
+    }
+    &--text {
+        width:45%;
+        padding:2%;
+    }
+    &--title{
+        font-size: larger;
+    }
+    &--desc{
+        font-size: medium;
+    }
+    
+}
