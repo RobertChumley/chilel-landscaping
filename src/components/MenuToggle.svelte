@@ -19,8 +19,9 @@
 		>
 	</a></li>
 
-	<li class="mobile-nav--menu-item"><a class="link" href="/residential/"> Residential</a></li>
-	<li class="mobile-nav--menu-item"><a class="link" href="/commercial/"> Commercial</a></li>
+	<li class="mobile-nav--menu-item"><a class="link" href="/landscaping/"> Landscaping</a></li>
+	<li class="mobile-nav--menu-item"><a class="link" href="/hardscaping/"> Hardscaping</a></li>
+	<li class="mobile-nav--menu-item"><a class="link" href="/other/"> Other Services</a></li>
 	<li class="mobile-nav--menu-item"><a class="link" href="/contact/"> Contact Us</a></li>
 	<li class="mobile-nav--menu-item"><a class="link" href="/about/"> About</a></li>
 	<li class="mobile-nav--menu-item">

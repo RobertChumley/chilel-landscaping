@@ -6,16 +6,19 @@
     width: 100%;
     &--image {
         width: 100%;
-        height: 300px;
+        height: auto;
+        min-height: 300px;
         background-size: cover;
         background-position: center center;
         @include tabletAndUp {
             width: 55%;
+            min-height: 450px;
           }
     }
     &--text {
         width:100%;
         padding:2%;
+        font-size: large;
         @include tabletAndUp {
             width: 45%;
           }
@@ -24,7 +27,10 @@
         font-size: larger;
     }
     &--desc{
-        font-size: medium;
+        font-size: larger;
+    }
+    &--list-item{
+        list-style: none;
     }
     @include tabletAndUp {
         display:flex;
