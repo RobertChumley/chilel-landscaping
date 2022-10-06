@@ -683,6 +683,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: solid black 2px;
 }
 .hero-left--image {
   width: 100%;
@@ -700,6 +701,7 @@ footer {
 .hero-left--text {
   width: 100%;
   padding-left: 2%;
+  font-size: large;
 }
 @media (min-width: 720px) {
   .hero-left--text {
@@ -725,6 +727,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: solid black 2px;
 }
 .hero-right--image {
   width: 100%;
@@ -750,7 +753,7 @@ footer {
   }
 }
 .hero-right--desc {
-  font-size: larger;
+  font-size: medium;
 }
 .hero-right--list-item {
   list-style: none;

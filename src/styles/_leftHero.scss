@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: solid black 2px;
     &--image {
         width: 100%;
         height: auto;
@@ -18,6 +19,7 @@
     &--text {
         width:100%;
         padding-left: 2%;
+        font-size: large;
         @include tabletAndUp {
             width: 45%;
           }
