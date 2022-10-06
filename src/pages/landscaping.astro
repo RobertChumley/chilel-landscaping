@@ -21,8 +21,17 @@ const basicContract = [
 	"Summer Refresh (weed pulling ($75)",
 	"Tree trimming ($10 / tree)"
 
-]
+];
+
+const advancedContract = [
+	"All services included in basic package",
+	"---and also---",
+	"Fall leaf cleanup ($75/.25 acres)",
+	"Snow event (over 3 inches) ($75/.25 acres)"
+];
+
 ---
+
 
 <html lang="en">
 	<head>
@@ -52,7 +61,12 @@ const basicContract = [
 			heroImage='background-image: url(/assets/LandscapingCourtyard.jpg);'
 			heroTitle='Yearly contractor services'
 			heroList = {basicContract}
-			/>
+		/>
+		<RightHero 
+			heroImage='background-image: url(/assets/LandscapingPath.jpg);'
+			heroTitle='Yearly Premium services'
+			heroList = {advancedContract}
+		/>
 		<Footer />
 	</body>
 </html>

@@ -14,12 +14,15 @@ const featuredProject = projects[0];
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+const {
+	title="Chilel Landscaping"
+} = Astro.props
 ---
 
 <html lang="en">
 	<head>
 		<MainHead
-			title={['title']}
+			title={title}
 			description={['description']}
 		/>
 	</head>

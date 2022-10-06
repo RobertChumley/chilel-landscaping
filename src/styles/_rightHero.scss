@@ -24,13 +24,18 @@
           }
     }
     &--title{
-        font-size: larger;
+        font-weight: 900;
+        font-size: var(--f-u6);
+        margin-bottom: 0.5rem;
+        margin-top: 0;
     }
     &--desc{
         font-size: larger;
     }
     &--list-item{
         list-style: none;
+        font-size: var(--f-u3);
+        padding-bottom: 5px;
     }
     @include tabletAndUp {
         display:flex;

@@ -698,7 +698,8 @@ footer {
 }
 .hero-left--text {
   width: 100%;
-  padding-left: 2%;
+  padding: 2%;
+  font-size: large;
 }
 @media (min-width: 720px) {
   .hero-left--text {
@@ -706,13 +707,18 @@ footer {
   }
 }
 .hero-left--title {
-  font-size: larger;
+  font-weight: 900;
+  font-size: var(--f-u6);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 .hero-left--desc {
-  font-size: medium;
+  font-size: var(--f-u3);
 }
 .hero-left--list-item {
   list-style: none;
+  font-size: var(--f-u3);
+  padding-bottom: 5px;
 }
 @media (min-width: 720px) {
   .hero-left {
@@ -752,13 +758,18 @@ footer {
   }
 }
 .hero-right--title {
-  font-size: larger;
+  font-weight: 900;
+  font-size: var(--f-u6);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 .hero-right--desc {
   font-size: larger;
 }
 .hero-right--list-item {
   list-style: none;
+  font-size: var(--f-u3);
+  padding-bottom: 5px;
 }
 @media (min-width: 720px) {
   .hero-right {
@@ -820,7 +831,7 @@ footer {
 }
 .service-title {
   font-weight: 900;
-  font-size: var(--f-u6);
+  font-size: var(--f-u8);
   margin-bottom: 0.5rem;
   margin-top: 0;
 }
