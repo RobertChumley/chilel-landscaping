@@ -70,4 +70,11 @@
 		background: none;
 		cursor: pointer;
 	}
+	.menu-nav{
+		position: absolute;
+  		left: 0;
+		top: 0;
+		z-index: 15;
+		background-color: white;
+	}
 </style>

@@ -628,6 +628,7 @@ footer {
 }
 .mobile-nav--menu-item {
   list-style: none;
+  padding-right: 10px;
 }
 .mobile-nav--menu {
   align-content: center;
@@ -705,9 +706,6 @@ footer {
     width: 45%;
   }
 }
-.hero-left--title {
-  font-size: larger;
-}
 .hero-left--desc {
   font-size: medium;
 }
@@ -750,9 +748,6 @@ footer {
   .hero-right--text {
     width: 45%;
   }
-}
-.hero-right--title {
-  font-size: larger;
 }
 .hero-right--desc {
   font-size: larger;
@@ -827,6 +822,22 @@ footer {
 
 .service-desc {
   font-size: larger;
+}
+
+.contact-form {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+.contact-form--button {
+  left: 20%;
+}
+.contact-form--input {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-column-gap: 10px;
+  width: 100%;
+  padding-bottom: 2%;
 }
 
 /*# sourceMappingURL=site.css.map */
