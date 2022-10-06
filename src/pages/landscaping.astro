@@ -7,6 +7,21 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 import ServiceHero from '../components/ServiceHero.astro';
 import LeftHero from '../components/LeftHero.astro';
 import RightHero from '../components/RightHero.astro';
+
+const serviceList = [
+	"Lawn Mowing ($75 / 1/4 Acre)",
+	"Mulching ($150 / cubic yard applied)",
+	"Spring yard refresh ($125)"];
+
+const basicContract = [
+	"Lawn Complete - (Lawn Mowing ($50 / 1/4 Acre) ",
+	"Spring Clean Up",
+	"Mulching ($125 / cubic yard applied) ",
+	"Weed pulling ($75)",
+	"Summer Refresh (weed pulling ($75)",
+	"Tree trimming ($10 / tree)"
+
+]
 ---
 
 <html lang="en">
@@ -27,12 +42,17 @@ import RightHero from '../components/RightHero.astro';
 			heroImage='background-image: url(/assets/LandscapingCourtyard.jpg);'
 			heroTitle='Integrate with existing architecture'
 			heroSummary="From natural stone and boulders to modern pavers and retaining walls, we'll help you choose a custom hardscape that fits seamlessly into your outdoor space. Best of all, our certified installers will make sure your patio, seating wall, and garden paths are built with Chilel Landscaping durable craftsmanship."
-		/>
+			/>
 		<RightHero 
 			heroImage='background-image: url(/assets/LandscapingPath.jpg);'
-			heroTitle='Lay a path to your success'
-			heroSummary=''
+			heroTitle='Try our service a la carte'
+			heroList = {serviceList}
 		/>
+		<LeftHero 
+			heroImage='background-image: url(/assets/LandscapingCourtyard.jpg);'
+			heroTitle='Yearly contractor services'
+			heroList = {basicContract}
+			/>
 		<Footer />
 	</body>
 </html>

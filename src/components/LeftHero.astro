@@ -3,7 +3,8 @@ import Style from '../../public/site.css';
 const{
     heroImage='',
     heroSummary='',
-    heroTitle=''
+    heroTitle='',
+    heroList=[]
 }= Astro.props;
 ---
 
@@ -15,8 +16,13 @@ const{
         <h2 class="hero-left--title">
             {heroTitle}
         </h2>
-            <p class="hero-left--desc">
-                {heroSummary}                
-            </p>
-        </div>
+        <ul class="hero-left--list">
+            {heroList.map((item) =>(<li class="hero-left--list-item">{item}</li>))}
+        </ul>
+        <p class="hero-left--desc">
+            {heroSummary}                
+        </p>
+        
     </div>
+</div>
+<br />
