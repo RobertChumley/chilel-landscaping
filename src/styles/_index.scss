@@ -48,10 +48,10 @@
     height: 100%;
     z-index: 10;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
-    padding-left: 2rem;
+    justify-content:left;
+    gap: 4rem;
     &--phone{
         align-self: center;
     }
@@ -70,9 +70,11 @@
     }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
     .overlay {
         padding-left: 4rem;
+        flex-direction: row;
+        gap: 2rem;
     }
 }
 
@@ -81,11 +83,12 @@
     font-size: var(--f-u6);
     margin-bottom: 0.5rem;
     margin-top: 0;
+
 }
 
 @media (min-width: 750px) {
     .title {
-        font-size: var(--f-u12);
+        font-size: var(--f-u10);
     }
 }
 
