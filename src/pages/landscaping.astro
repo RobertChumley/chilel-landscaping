@@ -3,7 +3,6 @@ import Styles from '../../public/site.css';
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
 import ServiceHero from '../components/ServiceHero.astro';
 import LeftHero from '../components/LeftHero.astro';
 import RightHero from '../components/RightHero.astro';
@@ -21,14 +20,28 @@ const basicContract = [
 	"Summer Refresh (weed pulling ($75)",
 	"Tree trimming ($10 / tree)"
 
-]
+];
+
+const advancedContract = [
+	"All services included in basic package",
+	"---and also---",
+	"Fall leaf cleanup ($75/.25 acres)",
+	"Snow event (over 3 inches) ($75/.25 acres)"
+];
+
+const {
+	title = "Landscaping Service",
+	description = "Trust Our Experts"
+}= Astro.props;
+
 ---
+
 
 <html lang="en">
 	<head>
 		<MainHead
-			title="Residential Services"
-			description="Learn about Jeanine White's most recent projects"
+			title={title}
+			description={description}
 		/>
 	</head>
 	<body>
@@ -52,7 +65,12 @@ const basicContract = [
 			heroImage='background-image: url(/assets/LandscapingCourtyard.jpg);'
 			heroTitle='Yearly contractor services'
 			heroList = {basicContract}
-			/>
+		/>
+		<RightHero 
+			heroImage='background-image: url(/assets/LandscapingPath.jpg);'
+			heroTitle='Yearly Premium services'
+			heroList = {advancedContract}
+		/>
 		<Footer />
 	</body>
 </html>

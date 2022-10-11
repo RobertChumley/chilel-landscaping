@@ -3,37 +3,39 @@ import Styles from '../../public/site.css';
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
+import MainHero from '../components/MainHero.astro';
+
+const {
+	title = "Chilel Landscaping",
+	description = "Trust Our Experts"
+}= Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
+		<MainHead
+			title={title}
+			description={description}
+		/>
 	</head>
 	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1>Chilel Landscaping and Hardscaping</h1>
-			<div class="heroImg">
-				<img
-					width="1400"
-					height="350"
-					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
-				/>
-			</div>
-			<div class="about">
-				<p class="about--text">
-					We’ve got a lot of special things going for us that translate into benefits for you, our client. So, excuse us if we toot our own horn just a bit. After all, it’s your satisfaction on the line. And we take that just as seriously as you do.				
-				</p>
-				<p class="about--text">
-					We pride ourselves on making you happy. We do it by keeping you apprised at every turn with designated staff that stay familiar with your project from start to finish. 
-				</p>
-				<p class="about--text">
-					We do it all. You never have to worry about bringing someone in because we’ve got you covered. From plantings to pergolas to fire pits, it’s the convenience of having a one-stop-shop focus on your satisfaction.
-				</p>
-				<p class="about--text">
-					From horticulturists to designers and technicians alike, our people live and breathe the landscape process. Quite simply, they love what they do. So much so, they stay with us for years on.
-				</p>
-			</div>
+		<Nav />	
+		<MainHero
+			heroImage="/assets/BigSuburb.jpg"
+		/>
+		<div class="about">
+			<p class="about--text">
+				We’ve got a lot of special things going for us that translate into benefits for you, our client. So, excuse us if we toot our own horn just a bit. After all, it’s your satisfaction on the line. And we take that just as seriously as you do.				
+			</p>
+			<p class="about--text">
+				We pride ourselves on making you happy. We do it by keeping you apprised at every turn with designated staff that stay familiar with your project from start to finish. 
+			</p>
+			<p class="about--text">
+				We do it all. You never have to worry about bringing someone in because we’ve got you covered. From plantings to pergolas to fire pits, it’s the convenience of having a one-stop-shop focus on your satisfaction.
+			</p>
+			<p class="about--text">
+				From horticulturists to designers and technicians alike, our people live and breathe the landscape process. Quite simply, they love what they do. So much so, they stay with us for years on.
+			</p>
 		</div>
 		<Footer />
 	</body>

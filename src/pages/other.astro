@@ -3,18 +3,21 @@ import Styles from '../../public/site.css';
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
 import ServiceHero from '../components/ServiceHero.astro';
 import LeftHero from '../components/LeftHero.astro';
 import RightHero from '../components/RightHero.astro';
 
+const {
+	title = "Chilel Landscaping",
+	description = "Trust Our Experts"
+}= Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<MainHead
-			title="Residential Services"
-			description="Learn about Jeanine White's most recent projects"
+			title={title}
+			description={description}
 		/>
 	</head>
 	<body>
@@ -27,22 +30,22 @@ import RightHero from '../components/RightHero.astro';
 		<LeftHero 
 			heroImage='background-image: url(/assets/SnowRemoval.jpg);'
 			heroTitle='Snow Removal'
-			heroSummary=""
+			heroSummary="Though snow days were fun when you were a kid, they’re less fun as a business owner. Every snow day is affecting your bottom line, but with professional snow removal service, you can keep the ball rolling. Our highly responsive team will make sure that your parking lot is plowed and salted so that your patrons and employees can come to your business safely. "
 		/>
 		<RightHero 
 			heroImage='background-image: url(/assets/Powerwash.jpg);'
 			heroTitle='Powerwashing'
-			heroSummary=''
+			heroSummary="Our pressure cleaning process will not cause harm to your family or the environment. We are one of Maryland’s most reputable pressure washing companies. Contact our professional team today for a free estimate! "
 		/>
 		<LeftHero 
 			heroImage='background-image: url(/assets/FallLeaves.jpg);'
 			heroTitle='Leaf Removal'
-			heroSummary=""
+			heroSummary="Dead leaves lying on the ground are a pretty common sight in Baltimore and every other city in America during the fall. They get shed by trees during this time of the year and they do so at a pretty rapid rate. The trees on your property will shed their leaves as well and your yard will soon be covered by them. This is not a good thing because this means your lawn will become suffocated, which can prevent photosynthesis from taking place. "
 		/>
 		<RightHero 
 			heroImage='background-image: url(/assets/Sweeping.jpg);'
 			heroTitle='Path Maintenance'
-			heroSummary=''
+			heroSummary="We promise quality, reliable cleaning service every time so our loyal customers feel special. We work hard to be the best. Our products are high-quality and safe. "
 		/>
 		<Footer />
 	</body>
