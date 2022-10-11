@@ -2,7 +2,7 @@
     import { user } from "./ContactStore.js";
     var hide=true;
     function handleClick() {
-      
+      alert("look!");
     };
 </script>
     
@@ -37,5 +37,3 @@
       </button>
     </div>
   </div>
-    <p>
-        {JSON.stringify($user, 0, 2)}</p>
