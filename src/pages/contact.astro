@@ -1,0 +1,45 @@
+---
+import Styles from '../../public/site.css';
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import ServiceHero from '../components/ServiceHero.astro';
+import LeftHero from '../components/LeftHero.astro';
+import RightHero from '../components/RightHero.astro';
+import ContactForm from '../components/ContactForm.svelte';
+
+const contactList = ["401 Log Canoe Circle",
+					"Stevensville MD, 21666",
+					"240-855-8555"];
+
+---
+
+<html lang="en">
+	<head>
+		<MainHead
+			title="Residential Services"
+			description="Learn about Jeanine White's most recent projects"
+		/>
+	</head>
+	<body>
+		<Nav />
+		<ServiceHero 
+			heroImage = '/assets/SunsetSuburb.jpg'
+			overlayTitle = 'Talk to us about your next project'
+		/>
+		<br />
+		<LeftHero 
+			heroImage='background-image: url(/assets/LayInLawn.jpg);'
+			heroTitle='Contact Us:'
+			heroList = {contactList}
+		/>
+		<ContactForm>
+
+		<p slot="button-label">Submit</p>
+
+		</ContactForm>
+		
+		<Footer />
+	</body>
+</html>

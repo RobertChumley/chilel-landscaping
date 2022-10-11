@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: solid black 2px;
     &--image {
         width: 100%;
         height: auto;
@@ -17,25 +18,20 @@
     }
     &--text {
         width:100%;
-        padding: 2%;
+        padding-left: 2%;
         font-size: large;
         @include tabletAndUp {
             width: 45%;
           }
     }
     &--title{
-        font-weight: 900;
-        font-size: var(--f-u6);
-        margin-bottom: 0.5rem;
-        margin-top: 0;
+        
     }
     &--desc{
-        font-size: var(--f-u3);
+        font-size: medium;
     }
     &--list-item{
         list-style: none;
-        font-size: var(--f-u3);
-        padding-bottom: 5px;
     }
     @include tabletAndUp {
         display:flex;
