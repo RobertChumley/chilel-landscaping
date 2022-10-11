@@ -4,14 +4,11 @@ import Styles from '../../public/site.css';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
 import LeftHero from '../components/LeftHero.astro';
 import RightHero from '../components/RightHero.astro';
+import MainHero from '../components/MainHero.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
-const projects = await Astro.glob('./project/**/*.md');
-const featuredProject = projects[0];
-
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 const {
@@ -28,31 +25,7 @@ const {
 	</head>
 	<body>
 		<Nav />
-		<header class="hero">
-			<img
-				width="1600"
-				height="1131"
-				class="hero-img"
-				src="/assets/BigSuburb.jpg"
-				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
-			/>
-			<div class="gradient"></div>
-			<div class="gradient2"></div>
-			<div class="overlay">
-				<div class="overlay--hero">
-					<h1 class="title">
-						Chilel Landscaping<br/><small>and hardscapes</small>
-					</h1>
-					<div class="roles">
-						<span class="role">🌳 Trees <span class="invert">🌳 Trees</span></span>
-						<span class="role">🏠 Landscaping <span class="invert">🏠 Landscaping </span></span>
-						<span class="role">❄ Snow Removal <span class="invert">❄ Snow Removal</span></span>
-					</div>
-					<p class="desc">Fully Licensed, Fully Available</p>
-				</div>
-				<div class="overlay--phone"><a href="tel:2402668555" class="overlay--button">Call Us!</a></div>
-			</div>
-		</header>
+		<MainHero />
 		<br />
 		<LeftHero 
 			heroImage='background-image: url(/assets/HouseDriveway.jpg);'

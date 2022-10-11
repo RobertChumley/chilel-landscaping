@@ -3,11 +3,19 @@ import Styles from '../../public/site.css';
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
+
+const {
+	title = "Chilel Landscaping",
+	description = "Trust Our Experts"
+}= Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
+		<MainHead
+			title={title}
+			description={description}
+		/>
 	</head>
 	<body>
 		<Nav />
